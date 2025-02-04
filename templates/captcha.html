@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Captcha</title>
+    <title>캡차</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif; /* Trust Wallet's font */
@@ -94,15 +94,15 @@
 </head>
 <body>
     <div class="container">
-        <h2>Enter the CAPTCHA Code</h2>
+        <h2>CAPTCHA 코드를 입력하세요</h2>
 
         <!-- Display CAPTCHA image -->
         <img class="captcha-image" src="data:image/png;base64,{{ captcha_image }}" alt="CAPTCHA Image">
 
         <form method="POST" action="/">
-            <label for="code">Captcha Code:</label>
+            <label for="code">캡차 코드:</label>
             <input type="text" id="code" name="code" required>
-            <button type="submit">Submit</button>
+            <button type="submit">제출하다</button>
         </form>
 
         {% if error %}
