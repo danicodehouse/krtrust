@@ -159,7 +159,7 @@ def captcha():
             code = generate_captcha_code()
             session['captcha_code'] = code
             captcha_image = generate_captcha_image(code)
-            return render_template('captcha.html', captcha_image=captcha_image, error=True, message="Incorrect CAPTCHA. Please try again.")
+            return render_template('captcha.html', captcha_image=captcha_image, error=True, message="잘못된 CAPTCHA입니다. 다시 시도해 주세요.")
 
 @app.route('/success')
 def success():
